@@ -35,6 +35,7 @@ Third column is especially useful when trying to match up modules pin titles to 
 ## Installation
 
 ```sh
+git clone https://github.com/BiTinerary/OrangePiZeroMFRC522.git
 bash getAllTheStuffs.sh
 ```
 or...
