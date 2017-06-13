@@ -1,3 +1,4 @@
+#!/bin/sh
 apt-get install python-dev
 apt-get install python-pip
 
