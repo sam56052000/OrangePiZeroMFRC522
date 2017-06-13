@@ -13,6 +13,7 @@ Additionally, at the time of this repo's creation, all tutorials found use some 
 ## Requirements
   * **GPIO Library for Orangepi Zero**: https://github.com/rm-hull/OPi.GPIO
   * **MFRC522 Library for interfacing with RFID**: https://github.com/mxgxw/MFRC522-python
+  * **SPI Library**: https://github.com/lthiery/SPI-Py.git
 
 Included in this repo is a modified clone of the above MFRC522 repo. The appropriate lines have been editted to work with Orangepi Zero. This includes replacing **line 1** `import RPI.GPIO as GPIO` with `import OPi.GPIO as GPIO` in all scripts and changing **Line 110** ( in **MFRC522.py**) from `spidev0.0` to `spidev1.0`. 
 
