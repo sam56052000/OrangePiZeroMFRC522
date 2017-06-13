@@ -55,5 +55,3 @@ cd ..
 git clone https://github.com/BiTinerary/OrangePiZeroMFRC522.git
 python ./OrangePiZeroMFRC522/MFRC522-python/Read.py
 ```
-
-You may need to end up installing `setup-tools`. ie: `pip install setup-tools`
