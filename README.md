@@ -36,7 +36,7 @@ Third column is especially useful when trying to match up modules pin titles to 
 
 `git clone https://github.com/BiTinerary/OrangePiZeroMFRC522.git && bash ./OrangePiZeroMFRC522/getAllTheStuff.sh`
 
-or...
+or the long manual way...
 
 ```sh
 apt-get install python-dev
