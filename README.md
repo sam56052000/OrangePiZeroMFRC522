@@ -35,6 +35,11 @@ Third column is especially useful when trying to match up modules pin titles to 
 ## Installation
 
 ```sh
+bash getAllTheStuffs.sh
+```
+or...
+
+```sh
 apt-get install python-dev
 apt-get install python-pip
 
