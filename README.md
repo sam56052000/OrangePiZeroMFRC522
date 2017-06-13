@@ -8,7 +8,7 @@ Additionally, at the time of this repo's creation, all tutorials found use some 
 ## Build Materials
   * **Module**: MFRC522 aka RFID-RC522 module [|Buy|](https://www.aliexpress.com/item/RC522-Card-Read-Antenna-RFID-Reader-IC-Card-Proximity-Module/1859133832.html?spm=2114.13010608.0.0.sZMQVW) 
   * **Board**: Orangepi Zero v1.4 [|Buy|](https://www.aliexpress.com/item/New-Orange-Pi-Zero-H2-Quad-Core-Open-source-512MB-development-board-beyond-Raspberry-Pi/32761500374.html?spm=2114.13010608.0.0.sZMQVW)
-  * **Kernel**: Armbian 3.4.113-sun8i Ubuntu Xenial 16.04 [|Download|](https://www.armbian.com/orange-pi-zero/)
+  * **Kernel**: Armbian 5.27 3.4.113-sun8i Ubuntu Xenial 16.04 [|Download|](https://www.armbian.com/orange-pi-zero/)
   
 ## Requirements
   * **GPIO Library for Orangepi Zero**: https://github.com/rm-hull/OPi.GPIO
