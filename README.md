@@ -33,7 +33,7 @@ This is the proper way to connect MFRC522 module to Orangepi Zero board via SPI.
 | 3.3v     | Pin 26              | 3.3v               |
 -------------------------------------------------------
 
-Third column is especially useful when trying to match up modules pin titles to schematic of a different board. It seems as though in almost all tutorials only pin numbers are referenced **or** pin functions. Both are useful depending on reference material, schematics and especially if trying to determine proper pinout for same SPI/I2C module on a different board model but uses the same ARM processor.
+Third column is especially useful when trying to match up modules pin titles to schematic of a different board. It seems as though in almost all tutorials only pin numbers are referenced **or** pin functions. Both are useful depending on reference material and schematics. Not to mention if trying to determine proper pinout for a SPI/I2C module on a different board model that uses the same ARM processor, as listed in a random tutorial or search results.
 
 ## Installation
 
