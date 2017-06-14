@@ -1,9 +1,9 @@
 # OrangePiZeroMFRC522
-RFID-MFRC522 module on Orangepi Zero running Armbian Ubuntu Xenial.  
+RFID-MFRC522 module on Orangepi Zero running Armbian 5.27 Ubuntu Xenial.  
   
 When trying to get an RFID module to work with Orangepi Zero, there was alot of mixed information across forums and instructions. Some directions didn't even specify board model, only referencing **OrangePi** but supplying GPIO pins.  
   
-Additionally, at the time of this repo's creation, all tutorials found use some hodgepodge mix match of other GPIO (RPI.GPIO/PyA20.GPIO) libraries that require editing MFRC522's source code, etc... Anyways, this is a simple attempt to collect all that information, simplify it, correct it and document it, in one place.
+Additionally, at the time of this repo's creation, all tutorials found use some hodgepodge mix match of other GPIO (RPI.GPIO/PyA20.GPIO) libraries that require editing MFRC522's source code, etc... Anyways, this is a simple attempt to collect all that information, simplify it, correct it and document it in one place.
 
 ## Build Materials
   * **Module**: MFRC522 aka RFID-RC522 module [|Buy|](https://www.aliexpress.com/item/RC522-Card-Read-Antenna-RFID-Reader-IC-Card-Proximity-Module/1859133832.html?spm=2114.13010608.0.0.sZMQVW) 
