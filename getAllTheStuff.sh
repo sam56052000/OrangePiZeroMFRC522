@@ -14,5 +14,4 @@ cd SPI-Py
 pip install .
 
 cd ..
-git clone https://github.com/BiTinerary/OrangePiZeroMFRC522.git
 python ./OrangePiZeroMFRC522/MFRC522-python/Read.py
