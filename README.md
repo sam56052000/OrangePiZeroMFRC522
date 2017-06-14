@@ -1,6 +1,8 @@
 # OrangePiZeroMFRC522
 RFID-MFRC522 module on Orangepi Zero running Armbian 5.27 Ubuntu Xenial.  
   
+<img src="https://github.com/BiTinerary/OrangePiZeroMFRC522/blob/master/gitImgs/644.jpg" alt="modulePinout" width="417" height="320"><img src="https://github.com/BiTinerary/OrangePiZeroMFRC522/blob/master/gitImgs/833.jpg" alt="modulePinout" width="417" height="320">
+  
 When trying to get an RFID module to work with Orangepi Zero, there was alot of mixed information across forums and instructions. Some directions didn't even specify board model, only referencing **OrangePi** but supplying GPIO pins.  
   
 Additionally, at the time of this repo's creation, all tutorials found use some hodgepodge mix match of other GPIO (RPI.GPIO/PyA20.GPIO) libraries that require editing MFRC522's source code, etc... Anyways, this is a simple attempt to collect all that information, simplify it, correct it and document it in one place.
