@@ -42,14 +42,14 @@ while continue_reading:
 	uidFull = "%s-%s-%s-%s" % (uid[0], uid[1], uid[2], uid[3])
         #print "Card read UID: "+str(uid[0])+","+str(uid[1])+","+str(uid[2])+","+str(uid[3])
 	
-    	hashie = {}
+	hashie = {}
 	with open('hashiFile.txt') as file:
 		for line in file:
 			key, value = line.split(',')
 			print key, value,
 			hashie[key] = value
 	
-    	if uidFull in hashie:
+	if uidFull in hashie:
 		print uidFull
 		os.system('%s' % hashie[uidFull])
 	else:
