@@ -8,9 +8,6 @@ continue_reading = True
 
 def ledAction():
     os.system('echo "heartbeat" > /sys/class/leds/red_led/trigger')
-    #os.system('echo 0 > /sys/class/leds/red_led/brightness')
-    #os.system('echo 1 > /sys/class/leds/red_led/brightness')
-    #os.system('echo 0 > /sys/class/leds/red_led/brightness')
 
 # Capture SIGINT for cleanup when the script is aborted
 def end_read(signal,frame):
@@ -27,7 +24,6 @@ MIFAREReader = MFRC522.MFRC522()
 
 # Welcome message
 print "\nWelcome to the MFRC522 data read example"
-#print "Press Ctrl-C to stop."
 
 # This loop keeps checking for chips. If one is near it will get the UID and authenticate
 while continue_reading:
