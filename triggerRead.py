@@ -6,9 +6,6 @@ import MFRC522, signal, time, os
 
 continue_reading = True
 
-def ledAction():
-    os.system('echo "heartbeat" > /sys/class/leds/red_led/trigger')
-
 # Capture SIGINT for cleanup when the script is aborted
 def end_read(signal,frame):
     global continue_reading
@@ -57,7 +54,9 @@ while continue_reading:
 		os.system('%s' % hashie[uidFull])
 	else:
 		print "UID: %s is not associated with a trigger" % uidFull
-
+	
+	os.system('echo "heartbeat" > /sys/class/leds/red_led/trigger')
+	
         # This is the default key for authentication
         key = [0xFF,0xFF,0xFF,0xFF,0xFF,0xFF]
         
