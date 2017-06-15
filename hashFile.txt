@@ -1,0 +1,3 @@
+86-164-187-172,echo Hellow Orld
+107-97-160-89,python /path/to/script.py
+54-182-152-172,ruby /path/to/script.rb
