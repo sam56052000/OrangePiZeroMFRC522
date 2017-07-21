@@ -14,7 +14,6 @@ Additionally, at the time of this repo's creation, all tutorials found use some 
   
 ## Requirements
   * **GPIO Library for Orangepi Zero**: https://github.com/rm-hull/OPi.GPIO
-  * **MFRC522 Library for interfacing with RFID**: https://github.com/mxgxw/MFRC522-python
   * **SPI Library**: https://github.com/lthiery/SPI-Py.git
 
 Included in this repo is a modified clone of the above MFRC522 repo. The appropriate lines have been editted to work with Orangepi Zero. This includes replacing **line 1** `import RPI.GPIO as GPIO` with `import OPi.GPIO as GPIO` in all scripts and changing **Line 110** ( in **MFRC522.py**) from `spidev0.0` to `spidev1.0`. 
@@ -67,3 +66,6 @@ Swipe RFID chip >> Run command/script associated with that RFID tag.
 A hardware spin off of https://github.com/BiTinerary/PersonalAPI
 
 [triggerRead.py](https://github.com/BiTinerary/OrangePiZeroMFRC522/blob/master/triggerRead.py) is the same source as original **Read.py** with a few modifications, mainly in the middle. I took out print statements throughout the source files (dump/read/MFRC/Write) just to clean up the scripts output. I added a **hashFile.txt** which stores values of a RFID chip and a local command as a dictionary. When RFID chip is scanned, execute it's value as a command. In the middle of **triggerRead.py** you can see the while loop to store the text file as key/value pairs. Then an `IF` statement that executes the value as a command, if the UID scanned matches the one stored in txt. If it doesn't match however, do nothing except print UID to output. This all happens [line 45-58](https://github.com/BiTinerary/OrangePiZeroMFRC522/blob/master/triggerRead.py#L45-L58)
+
+## References
+The main MFRC522 script in this repo is just a modified fork of https://github.com/mxgxw/MFRC522-python
