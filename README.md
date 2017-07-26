@@ -23,7 +23,7 @@ This is the proper way to connect MFRC522 module to Orangepi Zero board via SPI.
   
 It seems as though in almost all tutorials only pin numbers are referenced **or** pin functions. Both are useful depending on reference material. Not to mention if trying to determine proper pinout for a SPI/I2C module on a different board model that uses the same ARM processor. 
 
-| MFRC522  | Board's Pin Number  |     Pin Function   |
+| MFRC522  | OPi Zero Pin Number  |     Pin Function   |
 |:--------:|:-------------------:|:------------------:|
 | SDA      | Pin 3               | SPI1_CS/PA13       |
 | SCK      | Pin 4               | SPI1CLK/PA14       |
