@@ -37,6 +37,7 @@ Third column is especially useful when trying to match up modules pin titles to 
 ## Installation
 
 `git clone https://github.com/BiTinerary/OrangePiZeroMFRC522.git && bash ./OrangePiZeroMFRC522/getAllTheStuff.sh`
+`python ./OrangePiZeroMFRC522/MFRC522-python/Read.py`
 
 or the long manual way...
 
