@@ -2,7 +2,7 @@
 RFID-MFRC522 module on Orangepi Zero running Armbian 5.27 Ubuntu Xenial.  
   
 <img src="https://github.com/BiTinerary/OrangePiZeroMFRC522/blob/master/gitImgs/644.jpg" alt="modulePinout" width="417" height="320"><img src="https://github.com/BiTinerary/OrangePiZeroMFRC522/blob/master/gitImgs/833.jpg" alt="modulePinout" width="417" height="320">
-  
+
 When trying to get an RFID module to work with Orangepi Zero, there was alot of mixed information across forums and instructions. Some directions didn't even specify board model, only referencing **OrangePi** but supplying GPIO pins.  
   
 Additionally, at the time of this repo's creation, all tutorials found use some hodgepodge mix match of other GPIO (RPI.GPIO/PyA20.GPIO) libraries that require editing MFRC522's source code, etc... Anyways, this is an attempt to collect all that information, simplify it, correct it and document it in one place.
@@ -31,6 +31,8 @@ This is the proper way to connect MFRC522 module to Orangepi Zero board via SPI.
 | GND      | Pin 21              | GND                |
 | 3.3v     | Pin 26              | 3.3v               |
 -------------------------------------------------------
+
+<img src="https://github.com/BiTinerary/OrangePiZeroMFRC522/blob/master/gitImgs/821.jpg" alt="modulePinout">
 
 Third column is especially useful when trying to match up modules pin titles to schematic of a different board. It seems as though in almost all tutorials only pin numbers are referenced **or** pin functions. Both are useful depending on reference material and schematics. Not to mention if trying to determine proper pinout for a SPI/I2C module on a different board model that uses the same ARM processor, as listed in a random tutorial or search results.
 
