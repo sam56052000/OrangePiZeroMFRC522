@@ -19,7 +19,9 @@ Additionally, at the time of this repo's creation, all tutorials found use some 
 Included in this repo is a modified clone of the above MFRC522 repo. The appropriate lines have been editted to work with Orangepi Zero. This includes replacing **line 1** `import RPI.GPIO as GPIO` with `import OPi.GPIO as GPIO` in all scripts and changing **Line 110** (in **MFRC522.py**) from `spidev0.0` to `spidev1.0`. 
 
 ## Pinout
-This is the proper way to connect MFRC522 module to Orangepi Zero board via SPI. First column lists pin names as seen on module, verbatim. Second is the Orangepi Zero's literal pin number. Third column is the OPiZero's pin function as seen from a data sheet.  
+This is the proper way to connect MFRC522 module to Orangepi Zero board via SPI. First column lists pin names as seen on module, verbatim. Second is the Orangepi Zero's literal pin number. Third column is the OPiZero's pin function as seen from a data sheet. Third column is especially useful when trying to match up modules pin titles to schematic of a different board.  
+  
+It seems as though in almost all tutorials only pin numbers are referenced **or** pin functions. Both are useful depending on reference material. Not to mention if trying to determine proper pinout for a SPI/I2C module on a different board model that uses the same ARM processor. 
 
 | MFRC522  | Board's Pin Number  |     Pin Function   |
 |:--------:|:-------------------:|:------------------:|
@@ -33,8 +35,6 @@ This is the proper way to connect MFRC522 module to Orangepi Zero board via SPI.
 -------------------------------------------------------
 
 <img src="https://github.com/BiTinerary/OrangePiZeroMFRC522/blob/master/gitImgs/821.jpg" alt="modulePinout">
-
-Third column is especially useful when trying to match up modules pin titles to schematic of a different board. It seems as though in almost all tutorials only pin numbers are referenced **or** pin functions. Both are useful depending on reference material and schematics. Not to mention if trying to determine proper pinout for a SPI/I2C module on a different board model that uses the same ARM processor, as listed in a random tutorial or search results.
 
 ## Installation
 
