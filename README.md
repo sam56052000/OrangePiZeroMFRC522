@@ -25,15 +25,15 @@ It seems as though in almost all tutorials only pin numbers are referenced **or*
 
 | MFRC522  | OPi Zero Pin Number  |     Pin Function   |
 |:--------:|:-------------------:|:------------------:|
-| SDA      | Pin 3               | SPI1_CS/PA13       |
-| SCK      | Pin 4               | SPI1CLK/PA14       |
-| RST      | Pin 5               | UART2_RTS/PA02     |
-| MISO     | Pin 6               | SPI1_MISO/PA16     |
-| MOSI     | Pin 8               | SPI1_MOSI/PA15     |
-| GND      | Pin 21              | GND                |
-| 3.3v     | Pin 26              | 3.3v               |
+| SDA      | Pin 24 <strike>3</strike> | SPI1_CS/PA13       |
+| SCK      | Pin 23 <strike>4</strike> | SPI1CLK/PA14       |
+| RST      | Pin 22 <strike>5</strike> | UART2_RTS/PA02     |
+| MISO     | Pin 21 <strike>6</strike> | SPI1_MISO/PA16     |
+| MOSI     | Pin 19 <strike>8</strike> | SPI1_MOSI/PA15     |
+| GND      | Pin 6 <strike>21</strike>| GND                |
+| 3.3v     | Pin 1 <strike>26</strike>| 3.3v               |
 -------------------------------------------------------
-
+* The coordinantes that have been struck were based on [this](http://auseparts.com.au/image/cache/catalog/OrangePi/Orange-Pi-Zero-Pinout-banner2-700x700.jpg) popular, but misleading picture. 
 <img src="https://github.com/BiTinerary/OrangePiZeroMFRC522/blob/master/gitImgs/821.jpg" alt="modulePinout">
 
 ## Installation
