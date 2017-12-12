@@ -21,7 +21,7 @@ Included in this repo is a modified clone of the above MFRC522 repo. The appropr
 ## Pinout
 This is the proper way to connect MFRC522 module to Orangepi Zero board via SPI. First column lists pin names as seen on module, verbatim. Second is the Orangepi Zero's literal pin number. Third column is the OPiZero's pin function as seen from a data sheet. Third column is especially useful when trying to match up modules pin titles to schematic of a different board.  
   
-It seems as though in almost all tutorials only pin numbers are referenced **or** pin functions. Both are useful depending on reference material. Not to mention if trying to determine proper pinout for a SPI/I2C module on a different board model that uses the same ARM processor. 
+Both pin numbers and functions listed below are useful depending on reference material and if trying to determine proper pinout for a SPI/I2C module on a different board model. 
 
 | MFRC522  | OPi Zero Pin Number  |     Pin Function   |
 |:--------:|:-------------------:|:------------------:|
@@ -67,6 +67,8 @@ python ./OrangePiZeroMFRC522/MFRC522-python/Read.py
 Swipe RFID chip >> Run command/script associated with that RFID tag. A hardware spin off of https://github.com/BiTinerary/PersonalAPI
 
 [triggerRead.py](https://github.com/BiTinerary/OrangePiZeroMFRC522/blob/master/triggerRead.py) is the same source as original **Read.py** with a few modifications, mainly in the middle. Print statements were removed throughout the source files (dump/read/MFRC/Write) just to clean up the output. I added a **hashFile.txt** which stores the UID of RFID chips as keys and commands as values. So that effectively when a RFID chip is scanned, a corresponding command is executed. This all happens [line 45-58](https://github.com/BiTinerary/OrangePiZeroMFRC522/blob/master/triggerRead.py#L45-L58)
+
+I'm using a practical version of this repo and the triggerRead.py script mentioned above for a Google Sheet/API punching TimeClock, over here: https://github.com/BiTinerary/TimeClockPi
 
 ## References
 The main MFRC522 script in this repo is just a modified fork of https://github.com/mxgxw/MFRC522-python  
