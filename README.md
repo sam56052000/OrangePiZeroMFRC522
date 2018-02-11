@@ -1,5 +1,5 @@
 # OrangePiZeroMFRC522
-RFID-MFRC522 module on Orangepi Zero running Armbian 5.27 Ubuntu Xenial.  
+RFID-MFRC522 module on Orangepi Zero running **Armbian 5.27** Ubuntu Xenial.
   
 <img src="https://github.com/BiTinerary/OrangePiZeroMFRC522/blob/master/gitImgs/644.jpg" alt="modulePinout" width="417" height="320"><img src="https://github.com/BiTinerary/OrangePiZeroMFRC522/blob/master/gitImgs/833.jpg" alt="modulePinout" width="417" height="320">
 
