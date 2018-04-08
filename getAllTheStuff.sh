@@ -1,6 +1,6 @@
 #!/bin/sh
-apt-get install python-dev -y
-apt-get install python-pip -y
+apt-get update
+apt-get install -y python-dev python-pip
 pip install --upgrade pip
 pip install setuptools
 
