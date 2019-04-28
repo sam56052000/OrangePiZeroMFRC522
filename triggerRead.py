@@ -2,7 +2,8 @@
 # -*- coding: utf8 -*-
 
 import OPi.GPIO as GPIO
-import MFRC522, signal, time, os
+from MFRC522 import MFRC522
+import signal, time, os
 
 continue_reading = True
 
