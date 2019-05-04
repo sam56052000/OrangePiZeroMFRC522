@@ -2,15 +2,15 @@
 # -*- coding: utf8 -*-
 
 import OPi.GPIO as GPIO
-from MFRC522 import MFRC522
-import signal, time, os
+import MFRC522
+import signal
 
 continue_reading = True
 
 # Capture SIGINT for cleanup when the script is aborted
 def end_read(signal,frame):
     global continue_reading
-    print "\nCtrl+C captured, ending read."
+    print "Ctrl+C captured, ending read."
     continue_reading = False
     GPIO.cleanup()
 
@@ -21,7 +21,8 @@ signal.signal(signal.SIGINT, end_read)
 MIFAREReader = MFRC522.MFRC522()
 
 # Welcome message
-print "\nWelcome to the MFRC522 data read example"
+print "Welcome to the MFRC522 data read example"
+print "Press Ctrl-C to stop."
 
 # This loop keeps checking for chips. If one is near it will get the UID and authenticate
 while continue_reading:
@@ -40,24 +41,8 @@ while continue_reading:
     if status == MIFAREReader.MI_OK:
 
         # Print UID
-	uidFull = "%s-%s-%s-%s" % (uid[0], uid[1], uid[2], uid[3])
-        #print "Card read UID: "+str(uid[0])+","+str(uid[1])+","+str(uid[2])+","+str(uid[3])
-	
-	hashie = {}
-	with open('hashFile.txt') as file:
-		for line in file:
-			key, value = line.split(',')
-			print key, value,
-			hashie[key] = value
-	
-	if uidFull in hashie:
-		print uidFull
-		os.system('%s' % hashie[uidFull])
-	else:
-		print "UID: %s is not associated with a trigger" % uidFull
-	
-	os.system('echo "heartbeat" > /sys/class/leds/red_led/trigger')
-	
+        print "Card read UID: "+str(uid[0])+","+str(uid[1])+","+str(uid[2])+","+str(uid[3])
+    
         # This is the default key for authentication
         key = [0xFF,0xFF,0xFF,0xFF,0xFF,0xFF]
         
@@ -71,7 +56,6 @@ while continue_reading:
         if status == MIFAREReader.MI_OK:
             MIFAREReader.MFRC522_Read(8)
             MIFAREReader.MFRC522_StopCrypto1()
-	    time.sleep(2)
-	    os.system('echo 0 > /sys/class/leds/red_led/brightness')
-	else:
+        else:
             print "Authentication error"
+
