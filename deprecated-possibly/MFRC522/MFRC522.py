@@ -104,7 +104,8 @@ class MFRC522:
   Reserved32      = 0x3D
   Reserved33      = 0x3E
   Reserved34      = 0x3F
-    
+
+
   serNum = []
   
   def __init__(self, dev='/dev/spidev1.0', spd=1000000):
