@@ -36,6 +36,7 @@ class MFRC522:
   MI_OK       = 0
   MI_NOTAGERR = 1
   MI_ERR      = 2
+  MI_NEED_RST = 3
   
   Reserved00     = 0x00
   CommandReg     = 0x01
@@ -321,6 +322,7 @@ class MFRC522:
       print "AUTH ERROR!!"
     if not (self.Read_MFRC522(self.Status2Reg) & 0x08) != 0:
       print "AUTH ERROR(status2reg & 0x08) != 0"
+      status = self.MI_NEED_RST
 
     # Return the status
     return status
